@@ -1,0 +1,48 @@
+{
+    "cluster_name"                              : "testcloud",
+    "cluster_domain"                            : "testcloud01.local",
+    "public_host"                               : "${_param:openstack_proxy_address}",
+    "reclass_repository"                        : "https://github.com/InformaticonCloud/MCP.git",
+
+    "local_repositories"                        : "False",
+    "local_repo_url"                            : "${_param:cicd_control_vip_address}",
+
+    "deploy_network_netmask"                    : "255.255.255.0",
+    "deploy_network_gateway"                    : "10.90.0.1",
+    "control_network_netmask"                   : "255.255.255.0",
+    "dns_server01"                              : "8.8.8.8",
+    "dns_server02"                              : "8.8.4.4",
+    "control_vlan"                              : "131",
+    "tenant_vlan"                               : "133",
+    "tenant_network_netmask"                    : "255.255.255.0",
+    "tenant_network_gateway"                    : "10.90.2.1",
+
+    "infra_deploy_nic"                          : "eth0",
+    "infra_primary_first_nic"                   : "eth0",
+    "infra_primary_second_nic"                  : "eth1",
+
+    "salt_master_address"                       : "10.90.1.9",
+    "salt_master_management_address"            : "10.90.0.18",
+    "salt_master_hostname"                      : "saltmaster01",
+    "salt_api_password_hash"                    : "<<WILL_BE_GENERATED>>",
+
+    "maas_deploy_address"                       : "10.167.4.91",
+    "maas_hostname"                             : "mas01",
+
+    "infra_kvm_vip_address"                     : "10.90.1.4",
+    "infra_kvm01_control_address"               : "10.90.1.5",
+    "infra_kvm01_deploy_address"                : "10.90.0.5",
+    "infra_kvm01_hostname"                      : "kvm01",
+    "infra_bond_mode"                           : "lacp",
+
+    "openstack_network_engine"                  : "opencontrail",
+    "openstack_enabled"                         : "True",
+    "stacklight_enabled"                        : "True",
+    "cicd_enabled"                              : "True",
+    "kubernetes_enabled"                        : "False",
+
+    "openstack_nfv_dpdk_enabled"                : "False",
+    "openstack_nfv_sriov_enabled"               : "False",
+
+    "openstack_compute_count"                   : "1"
+}
