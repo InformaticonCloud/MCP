@@ -1,0 +1,19 @@
+{
+    "cluster_name"                              : "mcpdoc",
+
+    "stacklight_monitor_address"                : "10.90.1.43",
+    "stacklight_monitor_node01_address"         : "10.90.1.44",
+    "stacklight_monitor_hostname"               : "mon",
+    "stacklight_monitor_node01_hostname"        : "mon01",
+
+    "stacklight_log_address"                    : "10.90.1.47",
+    "stacklight_log_node01_address"             : "10.90.1.48",
+    "stacklight_log_hostname"                   : "log",
+    "stacklight_log_node01_hostname"            : "log01",
+
+    "stacklight_telemetry_address"              : "10.90.1.51",
+    "stacklight_telemetry_node01_address"       : "10.90.1.52",
+    "stacklight_telemetry_hostname"             : "mtr",
+    "stacklight_telemetry_node01_hostname"      : "mtr01"
+ 
+}
